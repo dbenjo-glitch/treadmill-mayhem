@@ -21,7 +21,6 @@
 | **3D asset generator** | Tripo 3D (tripo3d.ai, web app) | [STUDENT: Tripo model version] | All 12 racer models and the treadmill (.glb) |
 | **Reference images** | ChatGPT image generation | [STUDENT: model] | Reference pictures for the first 7 models, fed to Tripo image-to-3D |
 | **Audio** | None. Synthesized in code by `Scripts/AudioFX.cs` | | Coin, click, orb, acceleration, super speed, cheer, camera shutter and fall sounds |
-| **Trailer** | [STUDENT: tools used] | | 30–60 s trailer |
 | **Presentation** | Claude (Slides artifact) | claude-opus-5-5 | Demo Day slides, saved as [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf) |
 
 Blender and ElevenLabs were not used.
@@ -326,7 +325,7 @@ Unused takes kept in the folder for the record: `treadmill_parts.glb`, `breadcan
 
 ---
 
-## 4. Audio and Trailer Prompts
+## 4. Audio Prompts
 
 ### 4.1 Audio
 
@@ -344,9 +343,9 @@ No generative audio tool was used for this game. Every sound is synthesized in c
 
 [STUDENT: if you add ElevenLabs sounds from your Week 6 pipeline, list the prompts here.]
 
-### 4.2 Trailer Shot Prompts
+### 4.2 Trailer
 
-[STUDENT: list each generated shot's prompt and tool, and which shots are real gameplay capture.]
+No trailer was made; the instructor said it was not required for this submission.
 
 ---
 

@@ -8,7 +8,6 @@ Student: David Benjo
 - **Play in the browser (Itch.io):** [ADD LINK AFTER UPLOAD, e.g. https://dbenjo-glitch.itch.io/treadmill-mayhem]
 - **Play in the browser (Unity Play):** [ADD LINK AFTER UPLOAD]
 - **Download (WebGL build zip):** [ADD GITHUB RELEASE LINK]
-- **Trailer:** [ADD LINK]
 - **Prompt log:** [PROMPT_LOG.md](PROMPT_LOG.md)
 - **Demo Day presentation:** [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf)
 
@@ -121,7 +120,6 @@ docs/screenshots/           images used in this README
 | Playtesting | 50 scripted bot players of varying skill, written and run by Claude |
 | Sound effects | Synthesized in code at runtime (`Scripts/AudioFX.cs`), no generative audio tool |
 | Presentation slides | Claude (Slides artifact) |
-| Trailer | [ADD TOOLS] |
 
 Blender and ElevenLabs were not used.
 
