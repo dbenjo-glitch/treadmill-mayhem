@@ -403,6 +403,8 @@ No trailer was made; the instructor said it was not required for this submission
 
 The AI did all of the asset making while I prompted and created images with ChatGPT to feed into Tripo. Then I downloaded those assets and put them into Claude Code. For the game itself, I created it using an idea I got from an Instagram video I watched that had a ton of views. I connected that memory with a memory of playing games made by a studio called Ketchapp when I was a kid, which had similar style mobile games. From there I noted my ideas in ChatGPT, asked it to help me write a prompt for Claude Code, adjusted that prompt, sent it to Claude Code, and had Claude Code ask me questions so I could stay in the creative loop. That's how the mechanics of the game got made. As far as the sound goes, I just trusted Claude and I think it did a good job. I drew the inspiration for the background from Wii Sports.
 
+With the engine, instead of PG2, I saw that bigger changes were made in Unity than in PG2, but this was reflected in the time it took to make those changes. For the PG2 game I made more of the sound myself using ElevenLabs, but with the Unity game Claude did it automatically for me.
+
 ---
 
 ## 7. Asset Attribution & Licensing Table
