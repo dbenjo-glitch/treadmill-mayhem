@@ -51,3 +51,6 @@ crashlytics-buildid.txt
 
 # Local presentation captures (copies live in docs/screenshots)
 /Slides/
+
+# Burst output left behind by WebGL builds
+/Data/
