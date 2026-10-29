@@ -5,7 +5,7 @@
 **Student Name:** David Benjo
 **Project Title:** Treadmill Mayhem
 **Engine:** Unity 6000.6.7f1 (URP)
-**Repository URL:** [ADD AFTER CREATING THE REPO]
+**Repository URL:** https://github.com/dbenjo-glitch/treadmill-mayhem
 **Itch.io URL (Bonus):** [ADD AFTER UPLOAD]
 
 ---
