@@ -106,7 +106,7 @@ docs/screenshots/           images used in this README
 
 **Gameplay references:** Ketchapp-style hypercasual games: one simple rule, instant restarts, satisfying physics, bright simple 3D. [STUDENT: add any other games you had in mind.]
 
-**Target look:** bright, toy-like groceries with soft realism, a candy-colored TV-studio arena with a crowd, ring lights, balloons and speakers. Every Tripo prompt ended with the same style line so the set matches (see the prompt log).
+**Target look:** the arena background was inspired by Wii Sports. Bright, toy-like groceries with soft realism, a candy-colored TV-studio arena with a crowd, ring lights, balloons and speakers. Every Tripo prompt ended with the same style line so the set matches (see the prompt log).
 
 **Target sound:** short, punchy arcade effects for coins, orbs, boosts, impacts and falls, plus a crowd cheer for wins.
 
@@ -116,6 +116,7 @@ docs/screenshots/           images used in this README
 | --- | --- |
 | Code, scene building, testing and debugging | Claude Code (Claude desktop app), model claude-opus-5-5, driving Unity through the Unity MCP server (`com.unity.ai.assistant`) |
 | 3D models | Tripo 3D (tripo3d.ai), image-to-3D and text-to-3D |
+| Drafting the first design prompt from the student's notes | ChatGPT |
 | Reference images for the first models | ChatGPT image generation |
 | Playtesting | 50 scripted bot players of varying skill, written and run by Claude |
 | Sound effects | Synthesized in code at runtime (`Scripts/AudioFX.cs`), no generative audio tool |

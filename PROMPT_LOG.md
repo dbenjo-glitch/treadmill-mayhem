@@ -19,6 +19,7 @@
 | **Desktop control** | Claude computer use | claude-opus-5-5 | Focusing the Unity window, clicking through menus, taking gameplay screenshots |
 | **Playtesting** | 50 scripted bot players written by Claude (`Scripts/Testing/`) | | Balance data, bug finding, difficulty checks |
 | **3D asset generator** | Tripo 3D (tripo3d.ai, web app) | [STUDENT: Tripo model version] | All 12 racer models and the treadmill (.glb) |
+| **Prompt drafting** | ChatGPT | [STUDENT: model] | Turned the student's notes into the first design prompt for Claude Code, which the student then edited |
 | **Reference images** | ChatGPT image generation | [STUDENT: model] | Reference pictures for the first 7 models, fed to Tripo image-to-3D |
 | **Audio** | None. Synthesized in code by `Scripts/AudioFX.cs` | | Coin, click, orb, acceleration, super speed, cheer, camera shutter and fall sounds |
 | **Presentation** | Claude (Slides artifact) | claude-opus-5-5 | Demo Day slides, saved as [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf) |
@@ -400,12 +401,7 @@ No trailer was made; the instructor said it was not required for this submission
 
 ## 6. Human-in-the-Loop Curation & Analytical Reflection
 
-[STUDENT: write 200–300 words in your own voice. Things you might cover, based on what happened:]
-
-* What you designed versus what Claude built: the concept from the viral treadmill videos, the tuna can as the player, every Tripo model and prompt, the yellow-button start, the invisible anti-camping rule, the upgrade numbers in your spec.
-* Where you overruled the AI: replacing its visible zap zones with your warning rule, rejecting the slimmed textures because they looked worse, insisting it check it used your exact Tripo files.
-* How the engine changed the division of labor compared to PG2: in the browser game Claude edited files you could open directly; in Unity it worked through the MCP bridge and desktop control, and spent much of its time on engine problems (colliders, scene serialization, editor focus, build size) instead of game rules.
-* What you would do differently next time.
+The AI did all of the asset making while I prompted and created images with ChatGPT to feed into Tripo. Then I downloaded those assets and put them into Claude Code. For the game itself, I created it using an idea I got from an Instagram video I watched that had a ton of views. I connected that memory with a memory of playing games made by a studio called Ketchapp when I was a kid, which had similar style mobile games. From there I noted my ideas in ChatGPT, asked it to help me write a prompt for Claude Code, adjusted that prompt, sent it to Claude Code, and had Claude Code ask me questions so I could stay in the creative loop. That's how the mechanics of the game got made. As far as the sound goes, I just trusted Claude and I think it did a good job. I drew the inspiration for the background from Wii Sports.
 
 ---
 
