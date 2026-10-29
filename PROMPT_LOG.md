@@ -214,7 +214,7 @@ The student attached a second, detailed spec for the upgrade economy:
 * **Real treadmill belt:** the stripes now run along a looping mesh that goes over the top, around the back roller, under the treadmill and back up the front.
 * **Results screen:** "TUNA DOWN!", real calculated values, the exact coins still needed for the next upgrade, UPGRADE AVAILABLE and a new-high-score celebration.
 * **Mobile:** touch stick plus BOOST and SUPER buttons, safe-area handling for notched phones, pause on app switch, haptics, and an Android back button.
-* **App Store prep:** store listing text, privacy policy, a launch checklist and placeholder company details. Real in-app purchases and ads were not connected; they need the student's store accounts.
+* **App Store prep:** store listing text, privacy policy, a launch checklist (all in `docs/development/`) and placeholder company details. Real in-app purchases and ads were not connected; they need the student's store accounts.
 
 ### 2.7 Playtesting with 50 Bots
 
@@ -226,7 +226,7 @@ The student attached a second, detailed spec for the upgrade economy:
 
 > i have to go in 3 minutes wrap up what you are doing *(mid-task)*
 
-* **Outcome:** Claude wrote a playtest brief (`PLAYTEST_PROMPT.md`) and a bot player whose skill runs from first-timer to expert. Batches of bots played Race and Obstacle Mode in the editor and wrote reports (`PLAYTEST_*_REPORT.md`, notes in `PLAYTEST_NOTES.md`): survival times per racer, causes of death and frame rate.
+* **Outcome:** Claude wrote a playtest brief ([docs/development/PLAYTEST_PROMPT.md](docs/development/PLAYTEST_PROMPT.md)) and a bot player whose skill runs from first-timer to expert. Batches of bots played Race and Obstacle Mode in the editor and wrote reports (`docs/development/PLAYTEST_*_REPORT.md`, notes in [PLAYTEST_NOTES.md](docs/development/PLAYTEST_NOTES.md)): survival times per racer, causes of death and frame rate.
 * The bot data drove balance changes. For example, the Ball rival kept falling first, so its bounce and mass were retuned.
 * **"Yes, add grace":** the bots showed first-time players dying in about 11 seconds. Claude proposed a start-of-run grace period and the student approved it: in a player's first 3 runs, falling off in the first 8 seconds rescues the tuna back onto the belt once.
 
@@ -304,7 +304,7 @@ The student attached a second, detailed spec for the upgrade economy:
 
 > A simplified stylized whole raw fish lying flat on its side, designed as a rolling prop. Plump smooth body, silver-blue back fading to a soft pink-white belly, subtle scale texture, simple fins and a forked tail, one simple round eye. Fresh and glossy, toy-like but believable. No plate, no ice, no cartoon face. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
 
-**Canned Bread, the sealed-can redo** (`breadcan_v3.glb`)
+**Canned Bread, the sealed-can redo** (`breadcan_v3.glb`, downloaded but not imported)
 
 > A sealed can of bread lying horizontally on its side, designed to roll. Simple closed cylindrical metal can with silver ridged rims and flat metal lids on both ends. Wrap-around paper label in warm cream and toasty brown, with a simple illustration of a golden loaf of bread in the middle of the label, no text. Clean, polished, same style as a simple canned-food prop. No bread outside the can, no extra pieces. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
 
@@ -348,7 +348,7 @@ The description written for the tuna can's concept image:
 
 > A horizontal tuna can designed as a rolling prop. It is short, cylindrical, and compact, with a blue label, silver metallic ends, and a simple fish icon on the side. The form is clean and minimal, with a slightly more realistic can structure than the fruit. No tuna pieces, no face, and no limbs. The style should match the rest of the set: simple, polished, and game-ready.
 
-Takes kept in the folder but not used in the game: `treadmill_parts.glb` (the free untextured "Generate in Parts" treadmill), `breadcan_v2.glb`, `rollingpin_v2.glb`, `waterbottle_v2.glb`, `waterbottle_v3.glb`.
+Takes kept in `Models/Unused/` but not used in the game: `treadmill_parts.glb` (the free untextured "Generate in Parts" treadmill), `breadcan_v2.glb`, `rollingpin_v2.glb`, `waterbottle_v2.glb`, `waterbottle_v3.glb`.
 
 ---
 

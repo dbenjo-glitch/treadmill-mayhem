@@ -87,7 +87,8 @@ Prompts, routes and the import pipeline for each asset are in [PROMPT_LOG.md, se
 ```
 Assets/TreadmillMayhem/
   TreadmillMayhem.unity     the one game scene
-  Models/                   Tripo .glb models (player, rivals, treadmill)
+  Models/                   Tripo .glb models used in the game (player, rivals, treadmill)
+  Models/Unused/            extra Tripo takes that were not used
   Reference/                ChatGPT reference images that were fed to Tripo
   Prefabs/                  one prefab per racer
   Config/                   ScriptableObjects: game tuning, 5 AI difficulty levels, 12 racer stat sheets
@@ -98,6 +99,8 @@ Assets/TreadmillMayhem/
   Scripts/Testing/          the playtest bots
   Editor/                   scene builder, playtest menu, WebGL build tool
 docs/screenshots/           images used in this README
+docs/development/           playtest brief and bot reports, store listing, privacy policy, launch checklist
+docs/                       presentation PDF, itch.io cover and page text
 ```
 
 ## References and inspiration
