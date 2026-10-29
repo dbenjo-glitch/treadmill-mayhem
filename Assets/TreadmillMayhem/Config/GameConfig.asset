@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84187f40746b0564baeb6189e6c95d3a, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::TreadmillMayhem.GameConfig
+  startSpeed: 1.4
+  maxSpeed: 11
+  speedTimeConstant: 60
+  secondsPerSpeedLevel: 15
+  survivalPointsPerSecond: 50
+  orbPoints: 100
+  accelerationPointsPerSecond: 250
+  maxStamina: 100
+  startingStamina: 50
+  orbStaminaRestore: 25
+  boostDrainPerSecond: 20
+  boostForceMultiplier: 1.7
+  accelerationHoldSeconds: 3
+  accelerationMaxAngle: 22
+  accelerationMinInput: 0.5
+  accelerationImpactReset: 2.5
+  accelerationForceMultiplier: 1.3
+  pointsPerSuperCharge: 2500
+  maxSuperCharges: 1
+  superDuration: 3
+  superForceMultiplier: 2.2
+  superKnockbackTaken: 0.3
+  superHitMultiplier: 1.8
+  maxForceMultiplier: 3.4
+  offCenterTorque: 1.2
+  severeImpactSpeed: 6
+  controlLossSeconds: 0.6
+  maxAngularVelocity: 18
+  campFrontDepth: 2.4
+  campSideDepth: 0.9
+  campCornerFraction: 0.3
+  campWarnSeconds: 5
+  campLoseSeconds: 7
+  campMaxWarnings: 2
+  eliminationDepth: 1
+  eliminationRearMargin: 1.5
+  obstaclesEnabled: 1
+  obstacleInterval: {x: 5, y: 1.8}
+  orbInterval: {x: 2.5, y: 4.5}
+  coinInterval: {x: 2, y: 3.5}
+  powerUpInterval: {x: 8, y: 13}
+  hazardRampSeconds: 90

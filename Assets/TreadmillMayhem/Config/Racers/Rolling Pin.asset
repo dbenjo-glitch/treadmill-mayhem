@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24051f7a3efc48941a2503b213f2abf8, type: 3}
+  m_Name: Rolling Pin
+  m_EditorClassIdentifier: Assembly-CSharp::TreadmillMayhem.RacerDefinition
+  displayName: Rolling Pin
+  color: {r: 0.85, g: 0.6, b: 0.95, a: 1}
+  shape: 0
+  visualModel: {fileID: 4989474429523718291, guid: aeff5b867b356624e8d375181fd46753, type: 3}
+  visualSize: 1
+  visualRotation: {x: 338.92215, y: 46.45859, z: 18.869207}
+  mass: 1.6
+  friction: 0.6
+  bounciness: 0.2
+  linearDamping: 0.15
+  angularDamping: 0.4
+  acceleration: 25
+  steering: 10
+  maxRelativeSpeed: 8
+  responsiveness: 5
+  stability: 0.95
+  wobbleSusceptibility: 0.5
+  rollingInstability: 0
+  bumpStrength: 6.5
+  knockbackTaken: 0.6

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24051f7a3efc48941a2503b213f2abf8, type: 3}
+  m_Name: Fish
+  m_EditorClassIdentifier: Assembly-CSharp::TreadmillMayhem.RacerDefinition
+  displayName: Fish
+  color: {r: 0.35, g: 0.55, b: 0.95, a: 1}
+  shape: 2
+  visualModel: {fileID: -6088789714205194300, guid: 712f296003bd2c54d89a33e617963ff1, type: 3}
+  visualSize: 1.2
+  visualRotation: {x: 0, y: 74, z: 0}
+  mass: 0.9
+  friction: 0.3
+  bounciness: 0.35
+  linearDamping: 0.15
+  angularDamping: 0.4
+  acceleration: 28
+  steering: 24
+  maxRelativeSpeed: 8
+  responsiveness: 5
+  stability: 0.6
+  wobbleSusceptibility: 1.3
+  rollingInstability: 0.4
+  bumpStrength: 3.5
+  knockbackTaken: 0.9

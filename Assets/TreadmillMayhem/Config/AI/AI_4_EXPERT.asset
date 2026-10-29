@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73807770823a8554891f30932fcd9cd4, type: 3}
+  m_Name: AI_4_EXPERT
+  m_EditorClassIdentifier: Assembly-CSharp::TreadmillMayhem.AIDifficultyProfile
+  displayName: EXPERT
+  color: {r: 1, g: 0.5, b: 0.2, a: 1}
+  blurb: Fast and tidy. Collects stamina efficiently and picks its fights.
+  reactionTime: 0.12
+  lookahead: 1.2
+  predictionAccuracy: 0.85
+  awareness: 0.9
+  steeringNoise: 0.12
+  mistakeChance: 0.03
+  recovery: 0.85
+  correctionStrength: 0.9
+  rearSafety: 0.42
+  aggression: 0.6
+  pickupGreed: 0.75
+  boostUsage: 0.75
+  riskTolerance: 0.55
