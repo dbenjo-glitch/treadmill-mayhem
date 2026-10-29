@@ -10,7 +10,7 @@
 - **Upload:** `Builds/TreadmillMayhem_WebGL.zip` (117 MB), then tick **"This file will be played in the browser"**
 - **Embed options:**
   - Viewport dimensions: 1280 × 720
-  - Tick **Mobile friendly** and **Fullscreen button**
+  - Tick **Fullscreen button**. Only tick **Mobile friendly** if you test it on your phone first; the web build was only tested on a computer.
   - Leave **SharedArrayBuffer support** unticked
 - **Cover image:** `docs/itch_cover.png` (630 × 500)
 - **Screenshots:** `docs/screenshots/main_menu.jpg`, `race.jpg`, `results.jpg`, `tripo_racers.png`
