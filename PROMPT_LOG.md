@@ -6,7 +6,7 @@
 **Project Title:** Treadmill Mayhem
 **Engine:** Unity 6000.6.7f1 (URP)
 **Repository URL:** https://github.com/dbenjo-glitch/treadmill-mayhem
-**Itch.io URL (Bonus):** [ADD AFTER UPLOAD]
+**Itch.io URL (Bonus):** https://dbenjo-glitch.itch.io/treadmill-mayhem
 
 ---
 

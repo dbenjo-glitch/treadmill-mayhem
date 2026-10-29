@@ -5,8 +5,7 @@ A tuna can, five rival groceries and one treadmill that keeps getting faster. Ro
 AME 294: Games and AI, Portfolio Game 3 (Unreal or Unity, Built with AI)
 Student: David Benjo
 
-- **Play in the browser (Itch.io):** [ADD LINK AFTER UPLOAD, e.g. https://dbenjo-glitch.itch.io/treadmill-mayhem]
-- **Play in the browser (Unity Play):** [ADD LINK AFTER UPLOAD]
+- **Play in the browser (Itch.io):** https://dbenjo-glitch.itch.io/treadmill-mayhem
 - **Download (WebGL build zip, 117 MB):** [Treadmill Mayhem v1.0 release](https://github.com/dbenjo-glitch/treadmill-mayhem/releases/tag/v1.0). Unzip it, run `python -m http.server` inside the folder, then open http://localhost:8000
 - **Prompt log:** [PROMPT_LOG.md](PROMPT_LOG.md)
 - **Demo Day presentation:** [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf)
