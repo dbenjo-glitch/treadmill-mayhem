@@ -22,7 +22,7 @@
 | **Reference images** | ChatGPT image generation | [STUDENT: model] | Reference pictures for the first 7 models, fed to Tripo image-to-3D |
 | **Audio** | None. Synthesized in code by `Scripts/AudioFX.cs` | | Coin, click, orb, acceleration, super speed, cheer, camera shutter and fall sounds |
 | **Trailer** | [STUDENT: tools used] | | 30–60 s trailer |
-| **Presentation** | Claude (Slides artifact) | claude-opus-5-5 | Demo Day slides |
+| **Presentation** | Claude (Slides artifact) | claude-opus-5-5 | Demo Day slides, saved as [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf) |
 
 Blender and ElevenLabs were not used.
 

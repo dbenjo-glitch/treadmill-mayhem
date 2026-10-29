@@ -10,6 +10,7 @@ Student: David Benjo
 - **Download (WebGL build zip):** [ADD GITHUB RELEASE LINK]
 - **Trailer:** [ADD LINK]
 - **Prompt log:** [PROMPT_LOG.md](PROMPT_LOG.md)
+- **Demo Day presentation:** [docs/Treadmill_Mayhem_Presentation.pdf](docs/Treadmill_Mayhem_Presentation.pdf)
 
 ![Main menu](docs/screenshots/main_menu.jpg)
 
