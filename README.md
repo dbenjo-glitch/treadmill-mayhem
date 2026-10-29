@@ -104,7 +104,7 @@ docs/screenshots/           images used in this README
 
 **Concept:** the viral Instagram and TikTok "treadmill race" videos, where cans, fruit and balls are dropped on a running treadmill to see which one stays on longest. The game turns that into a race you control.
 
-**Gameplay references:** Ketchapp-style hypercasual games: one simple rule, instant restarts, satisfying physics, bright simple 3D. [STUDENT: add any other games you had in mind.]
+**Gameplay references:** Ketchapp-style hypercasual games: one simple rule, instant restarts, satisfying physics, bright simple 3D. The student played Ketchapp games as a kid.
 
 **Target look:** the arena background was inspired by Wii Sports. Bright, toy-like groceries with soft realism, a candy-colored TV-studio arena with a crowd, ring lights, balloons and speakers. Every Tripo prompt ended with the same style line so the set matches (see the prompt log).
 

@@ -267,62 +267,87 @@ The student attached a second, detailed spec for the upgrade economy:
 
 ## 3. Tripo 3D Asset Pipeline
 
-**Route:** generated directly at tripo3d.ai from the student's prompts, downloaded as `.glb`, and imported into Unity. Tripo was not driven over MCP.
+**Route:** generated directly at tripo3d.ai from the student's prompts and images, downloaded as `.glb`, and imported into Unity. Tripo was not driven over MCP.
 **Credits:** [STUDENT: Tripo plan and credit balance before/after, if you have it]
 
-**Two generation methods were used:**
+**Three generation methods were used for the 13 models:**
 
-1. **Image-to-3D (first 7 models, Oct 21, about 12:25–1:00 pm):** the student made front-on reference pictures in ChatGPT, then fed each picture to Tripo. The pictures are kept in `Assets/TreadmillMayhem/Reference/`.
-2. **Text-to-3D (later models, about 3:00–3:30 pm):** written prompts, often run several times (`_v2`, `_v3` files).
+| Method | Models |
+| --- | --- |
+| **Image-to-3D from the student's ChatGPT concept images** (Oct 21, about 12:25–1:00 pm). The images are kept in `Assets/TreadmillMayhem/Reference/`. | Treadmill, Orange, Apple, Canned Beans, Canned Tuna, Cola Can, Bouncy Ball |
+| **Text-to-3D** with a prompt typed into Tripo's 3D generator (about 3:00–3:30 pm) | Raw Fish, Canned Bread, Paper Towels, Rolling Pin, Water Bottle |
+| **Tripo image tool, then image-to-3D:** a concept image made in Tripo's own Image tool (Nano Banana, 1:1, 2 images), and the first image used as the 3D input | Onion |
+
+**Tripo settings (every model):**
+
+* Model: HD Model, H3.1 Best Quality
+* Geometry: Ultra Mesh Quality on, triangle topology
+* Polycount: 20,000 for the objects, 40,000 for the treadmill
+* Texture: on, 4K, PBR on, Remove Lighting on
+* Off: Generate in Parts (except an extra untextured treadmill), 8K texture, AI Complete
 
 **Shared style line.** Every prompt ended with the same sentence so the whole set matches:
 
-> Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated object, no character face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+> Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
 
 **Format pipeline into Unity (same for every asset):**
 
-1. Downloaded from Tripo as `.glb` with PBR textures (base color, metallic-roughness and normal maps, 4096 px each).
+1. Downloaded from Tripo as `.glb` with 4K PBR textures (base color, metallic-roughness and normal maps).
 2. Imported with glTFast, with no conversion, retopology or Blender step. Claude checked file hashes to prove it used the student's exact files.
 3. The scene builder wraps each model in a racer prefab: it measures the mesh, sets a matching collider (a rolling cylinder, a sphere or a capsule), applies a rotation so the model lies the right way, and links a stat sheet.
 4. For web builds, the build tool copies the textures into Unity-compressed form at the same 4096 px resolution (incident 7).
 
-### 3.1 Tuna Can (the player)
+### 3.1 Text-to-3D prompts (exact text, final versions)
 
-* **Route:** ChatGPT reference image (`Reference/tuna.png`), then Tripo image-to-3D. File: `Models/tuna.glb`.
-* **Exact Prompt:**
+**Raw Fish** (`fish.glb`, rival and playable character that slides instead of rolling)
+
+> A simplified stylized whole raw fish lying flat on its side, designed as a rolling prop. Plump smooth body, silver-blue back fading to a soft pink-white belly, subtle scale texture, simple fins and a forked tail, one simple round eye. Fresh and glossy, toy-like but believable. No plate, no ice, no cartoon face. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+
+**Canned Bread, the sealed-can redo** (`breadcan_v3.glb`)
+
+> A sealed can of bread lying horizontally on its side, designed to roll. Simple closed cylindrical metal can with silver ridged rims and flat metal lids on both ends. Wrap-around paper label in warm cream and toasty brown, with a simple illustration of a golden loaf of bread in the middle of the label, no text. Clean, polished, same style as a simple canned-food prop. No bread outside the can, no extra pieces. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+
+* **Placement note:** the redo was written because the first takes had bread poking out of the can. The game still uses the earlier take, `breadcan.glb`, as a rival and playable character; the sealed redo was downloaded but not imported. The earlier take's prompt was not saved.
+
+**Paper Towels** (`papertowel.glb`, rival and playable character)
+
+> A paper towel roll lying horizontally on its side, designed to roll. Soft white cylindrical roll with a subtle quilted dot texture and faint perforation lines, a visible brown cardboard tube core at both ends, neat and tightly wound. Clean, soft and polished. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+
+**Rolling Pin** (`rollingpin.glb`, rival and playable character; a free retry of the prompt below)
+
+> A classic wooden rolling pin lying horizontally, designed as a rolling prop. Smooth light maple wooden barrel with two slimmer turned handles at the ends, subtle fine wood grain, softly polished finish. Simple and clean. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+
+**Water Bottle** (`waterbottle.glb`, rival and playable character; a free retry of the prompt below)
+
+> A plastic water bottle lying horizontally on its side, designed to roll. Frosted light-blue plastic body with soft horizontal ridges, a bright blue screw cap, and a plain blue label band with a simple white water-drop icon, no text. Opaque frosted look, no transparency. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
+
+* **Lesson learned:** the bottle came out with a crinkled base. "Soft horizontal ridges" is the likely cause; a redo would say "smooth rigid uncrushed plastic, no wrinkles" instead.
+
+### 3.2 Onion: image prompt in Tripo's image tool, then image-to-3D
+
+**Onion** (`onion.glb`, rival and playable character)
+
+> A simplified stylized yellow onion designed as a rolling prop. Round bulb with a gently pointed top, glossy golden-brown papery skin with subtle vertical lines, a short dry sprout tip on top and a small neat tuft of roots at the bottom. Toy-like but believable. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no character face, no arms or legs, bright but controlled colors, consistent with casual mobile game art. Three-quarter view, object centered and fully in frame, plain light warm-grey background, soft contact shadow, no text, no logos.
+
+### 3.3 Image-to-3D from ChatGPT concept images (no Tripo text prompt)
+
+These had no text prompt in Tripo. The input was the student's ChatGPT concept image, so the only prompt is the description written for that image.
+
+| Model | File | Placement in game | Concept image |
+| --- | --- | --- | --- |
+| Canned Tuna | `tuna.glb` | The player in every mode, the camera's focus in the menu fly-out | `Reference/tuna.png` |
+| Treadmill | `treadmill.glb` | The treadmill itself, center of the scene | `Reference/treadmill.png` |
+| Orange | `orange.glb` | Rival and playable character | `Reference/orange.png` |
+| Apple | `apple.glb` | Rival and playable character | `Reference/apple.png` |
+| Canned Beans | `beans.glb` | Rival and playable character | `Reference/beans.png` |
+| Cola Can | `cola.glb` | Rival and playable character | `Reference/cola.png` |
+| Bouncy Ball | `ball.glb` (a free retry) | Rival and playable character | `Reference/ball.png` |
+
+The description written for the tuna can's concept image:
 
 > A horizontal tuna can designed as a rolling prop. It is short, cylindrical, and compact, with a blue label, silver metallic ends, and a simple fish icon on the side. The form is clean and minimal, with a slightly more realistic can structure than the fruit. No tuna pieces, no face, and no limbs. The style should match the rest of the set: simple, polished, and game-ready.
->
-> Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated object, no character face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
 
-* **Placement:** the player character in every mode, the camera's focus in the menu fly-out, and a selectable character.
-
-### 3.2 Canned Bread
-
-* **Route:** Tripo text-to-3D. Files: `breadcan.glb` (in the game), `breadcan_v2.glb`, and a third take, `breadcan_v3.glb`, that was not imported.
-* **Exact Prompt:**
-
-> sealed can of bread lying horizontally on its side, designed to roll. Simple closed cylindrical metal can with silver ridged rims and flat metal lids on both ends. Wrap-around paper label in warm cream and toasty brown, with a simple illustration of a golden loaf of bread in the middle of the label, no text. Clean, polished, same style as a simple canned-food prop. No bread outside the can, no extra pieces. Simple stylized 3D game asset, soft realism, clean shapes, minimal detail, smooth materials, polished studio look, toy-like proportions, isolated single object, no face, no arms or legs, bright but controlled colors, consistent with casual mobile game art.
-
-* **Placement:** AI rival and playable character. In bot testing it was the toughest rival (heavy and stable), so its knockback was tuned down.
-
-### 3.3 The other models
-
-| Model | File | Route | Placement in game | Prompt |
-| --- | --- | --- | --- | --- |
-| Treadmill | `treadmill.glb` | ChatGPT image, then Tripo image-to-3D | The treadmill itself, center of the scene | [STUDENT: add prompt] |
-| Apple | `apple.glb` | ChatGPT image, then Tripo image-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Orange | `orange.glb` | ChatGPT image, then Tripo image-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Bouncy Ball | `ball.glb` | ChatGPT image, then Tripo image-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Canned Beans | `beans.glb` | ChatGPT image, then Tripo image-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Cola Can | `cola.glb` | ChatGPT image, then Tripo image-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Raw Fish | `fish.glb` | Tripo text-to-3D | Rival and playable character (slides instead of rolling) | [STUDENT: add prompt] |
-| Rolling Pin | `rollingpin.glb` | Tripo text-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Water Bottle | `waterbottle.glb` | Tripo text-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Onion | `onion.glb` | Tripo text-to-3D | Rival and playable character | [STUDENT: add prompt] |
-| Paper Towels | `papertowel.glb` | Tripo text-to-3D | Rival and playable character | [STUDENT: add prompt] |
-
-Unused takes kept in the folder for the record: `treadmill_parts.glb`, `breadcan_v2.glb`, `rollingpin_v2.glb`, `waterbottle_v2.glb`, `waterbottle_v3.glb`.
+Takes kept in the folder but not used in the game: `treadmill_parts.glb` (the free untextured "Generate in Parts" treadmill), `breadcan_v2.glb`, `rollingpin_v2.glb`, `waterbottle_v2.glb`, `waterbottle_v3.glb`.
 
 ---
 
