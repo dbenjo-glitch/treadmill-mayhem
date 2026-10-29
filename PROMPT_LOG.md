@@ -18,7 +18,8 @@
 | **Engine bridge** | Unity MCP server from the Unity AI Assistant package (`com.unity.ai.assistant`) | Package 2.21.0-pre.1 | Let Claude run editor commands, read the console, enter Play mode and build |
 | **Desktop control** | Claude computer use | claude-opus-5-5 | Focusing the Unity window, clicking through menus, taking gameplay screenshots |
 | **Playtesting** | 50 scripted bot players written by Claude (`Scripts/Testing/`) | | Balance data, bug finding, difficulty checks |
-| **3D asset generator** | Tripo 3D (tripo3d.ai, web app) | [STUDENT: Tripo model version] | All 12 racer models and the treadmill (.glb) |
+| **3D asset generator** | Tripo 3D (tripo3d.ai, web app) | HD Model, H3.1 Best Quality | All 12 racer models and the treadmill (.glb) |
+| **Concept image (onion)** | Tripo's Image tool | Nano Banana | The onion's concept image, then fed to Tripo image-to-3D |
 | **Prompt drafting** | ChatGPT | [STUDENT: model] | Turned the student's notes into the first design prompt for Claude Code, which the student then edited |
 | **Reference images** | ChatGPT image generation | [STUDENT: model] | Reference pictures for the first 7 models, fed to Tripo image-to-3D |
 | **Audio** | None. Synthesized in code by `Scripts/AudioFX.cs` | | Coin, click, orb, acceleration, super speed, cheer, camera shutter and fall sounds |
